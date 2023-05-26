@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RockFests in Ukraine</title>
+
+	<link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./Styles/styles_login.css">
+</head>
+
+
+<body>
+	<header class="header">
+			<div class="nav-logo-wrapper">
+				<span class="nav-title"><a href="main.html">UKr</a></span>
+			</div>
+	</header>
+
+	<div class="page-wrapper">
+		<section class="registration-section">
+			<div class="registration-form-wrapper">			
+				<div class="form-card flex-column">
+					<div class="form-wrapper">
+
+						<h2 class="form-title">Log in</h2>
+
+						<form class="registration-form flex-column" id="login-form">
+						  <input type="text" class="form-input" id="login" name="login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Логін" required>
+						  <input type="password" class="form-input" id="password" name="password" placeholder="Пароль" required>
+						  <button class="form-submit-button" type="submit"><strong>Увійти</strong></button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<p>Ще не маєте сторінки? <a href="registration.html"><b>Зареєструватися</b></a></p>
+
+
+<script src="server.js"></script>
+<script src="./Scripts/login.js"></script>
+</body>
+</html>

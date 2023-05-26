@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RockFests in Ukraine</title>
+
+	<link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./Styles/styles_registration.css">
+</head>
+
+
+<body>
+	<header class="header">
+			<div class="nav-logo-wrapper">
+				<span class="nav-title"><a href="main.html">UKr</a></span>
+			</div>
+	</header>
+
+	<div class="page-wrapper">
+		<section class="registration-section">
+			<div class="registration-form-wrapper">			
+				<div class="form-card flex-column">
+					<div class="form-wrapper">
+
+						<h2 class="form-title">Sign in</h2>
+
+						<form class="registration-form flex-column" id="registration-form">
+						  <div class="form-row">
+						    <input type="text" class="form-input1" id="surname" name="surname" placeholder="Прізвище" required>
+						    <input type="text" class="form-input1" id="name" name="name" placeholder="Ім'я" required>
+						  </div>
+						  <input type="email" class="form-input2" id="email" name="email" placeholder="Електронна пошта" required>
+						  <div class="form-row">
+						    <input type="text" class="form-input1" id="username" name="username" placeholder="Нікнейм" required>
+						    <input type="password" class="form-input1" id="password" name="password" placeholder="Пароль" required>
+						  </div>
+						  <button class="form-submit-button" type="submit"><strong>Зареєструватися</strong></button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<p>Маєте акаунт? <a href="login.html"><b>Увійти</b></a></p>
+
+
+<script src="server.js"></script>
+<script src="./Scripts/registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+html,
+body,
+main {
+	height: 100%;
+	margin: 0;
+	background-color: #000000;
+	background-repeat: no-repeat;
+    background-size: 57%;
+    background-position: right;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.nav-bar-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: right;
+	padding: 30px 80px 0px 80px; 
+}
+
+
+.nav-menu-item {
+  color: #F7DE59;
+  font-family: Roboto;
+  font-size: 23px;
+  display: inline-block;
+  font-weight: lighter;
+  padding-left: 150px;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+.dropdown a {
+  display: block;
+  font-family: Roboto;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-menu-wrapper:hover .dropdown {
+  display: block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.modal.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-img {
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.prev-button,
+.next-button,
+.close-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: #F7DE59;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 1rem;
+}
+
+.next-button {
+  right: 1rem;
+}
+
+.close-button {
+  top: 2rem;
+  right: 1rem;
+}
+
+.nav-logo-wrapper{
+	color: #F7DE59;
+	font-family: Roboto;
+	font-size: 40px;
+	font-weight: bold;
+	padding-left: 5%;
+	padding-top: 0.1%;
+	cursor: pointer;
+}
+
+
+.page-title {
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 1em;
+	padding-left: 5%;
+	padding-bottom: 1%;
+}
+
+p, ul {
+	color: #FFFFFF;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 18px;
+	line-height: 24px;
+	font-family: Roboto;
+}
+
+iframe {
+  width: 560px;
+  height: 315px;
+}
+
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.video iframe {
+  width: 640px;
+  height: 360px;
+}
+
+
+.img1, .img4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60vh;
+  max-height: 400px; 
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.img1 img, .img4 img  {
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img2,
+.img3 {
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-basis: 48%; 
+  height: 60vh;
+  max-height: 400px; 
+}
+
+.img2 img,
+.img3 img {
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+
+.img4 {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#comments {
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#comment-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+#comment-form input[type="text"],
+#comment-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+#comment-form textarea {
+  height: 35%;
+}
+
+#comment-form button {
+  background-color: #F7DE59;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#comment-list {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment .comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comment .comment-header h4 {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+.comment .comment-header span {
+  font-family: Roboto;
+  font-size: 12px;
+}
+
+.comment .comment-message {
+  font-family: Roboto;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

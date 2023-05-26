@@ -1,0 +1,164 @@
+html,
+body,
+main {
+	height: 100%;
+	margin: 0;
+	background-color: #000000;
+	background-image: url("./Images/rock.jpg");
+	background-repeat: no-repeat;
+    background-size: 57%;
+    background-position: right;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.nav-bar-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: right;
+	padding: 30px 80px 0px 80px; 
+}
+
+
+.nav-menu-item {
+  color: #F7DE59;
+  font-family: Roboto;
+  font-size: 23px;
+  display: inline-block;
+  font-weight: lighter;
+  padding-left: 150px;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+.dropdown a {
+  display: block;
+  font-family: Roboto;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.nav-menu-wrapper:hover .dropdown {
+  display: block;
+}
+
+
+.nav-logo-wrapper{
+	color: #F7DE59;
+	font-family: Roboto;
+	font-size: 40px;
+	font-weight: bold;
+	padding-left: 5%;
+	padding-top: 0.1%;
+	cursor: pointer;
+}
+
+
+
+.page-title {
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 90px;
+	font-weight: bold;
+	line-height: 0.3em;
+	padding-left: 10%;
+}
+
+
+.page-title-second {
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 0.5em;
+	padding-left: 27%;
+}
+
+.about1 {
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 23px;
+	font-weight: lighter;
+	line-height: 0.3em;
+	padding-left: 19%;
+}
+
+.about2 {
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: lighter;
+	line-height: 0.3em;
+	padding-left: 23%;
+}
+
+.about3 {
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 23px;
+	font-weight: lighter;
+	line-height: 0.3em;
+	padding-left: 13.5%;
+}
+
+
+.button {
+	padding-left: 25%;
+	cursor: pointer;
+}
+
+
+.rectangle1 {
+	position: absolute;
+  	width: 99.5%;
+	height: 9%;
+	background-color: #FFFFFF;
+	transform: rotate(5deg);
+	font-family: Roboto;
+	font-size: 36px;
+	font-weight: bolder;
+	padding-top: 18px;
+}
+
+.rectangle2 {
+	position: absolute;
+  	width: 99.8%;
+  	height: 9%;
+  	background-color: #F7DE59;
+  	transform: rotate(-5deg);
+  	font-family: Roboto;
+	font-size: 36px;
+	font-weight: bolder;
+	padding-top: 18px;
+}
+
+
+.container {
+	padding-bottom: 160px;
+	text-align: center;
+}
